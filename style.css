@@ -160,6 +160,12 @@ footer address .electronic a.whatsapp:hover{
   right: -1rem;
 } */
 
+@supports (-moz-appearance:none) {
+  main a[target="_blank"]:hover::after {
+    content: '';
+  }
+}
+
 @media screen and (max-width: 1200px) {
   footer address {
     flex-direction: column;
