@@ -152,13 +152,23 @@ footer address .electronic a.whatsapp:hover{
   background-color: #52FF6A33;
 }
 
-/* footer a[href^="mailto:"]:hover::after {
-  content: '🖃';
-  color: #fefefe;
+footer a[href^="mailto:"]:hover::after {
+  content: '\2709';
+  color: #fefefecc;
+  position: absolute;
+  font-size: 1.6rem;
+  top: -0.2rem;
+  right: -1.6rem;
+}
+
+footer a[href^="tel:"]:hover::after {
+  content: '\260F';
+  color: #fefefecc;
   position: absolute;
   font-size: 1.3rem;
-  right: -1rem;
-} */
+  top: -0.1rem;
+  right: -1.6rem;
+}
 
 @supports (-moz-appearance:none) {
   main a[target="_blank"]:hover::after {
