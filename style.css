@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('NeueMontreal-Regular.otf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('NeueMontreal-Medium.otf');
+  font-weight: 600;
+}
+
+html, body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  height: 100vh;
+  padding: 60px 100px;
+  color: #fefefe;
+  font-family: NeueMontreal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+header{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header svg{
+  fill: #fefefe;
+  height: 40px;
+}
+
+header ul {
+  padding: 0px;
+  display: flex;
+}
+
+header ul li {
+  margin-left: 40px;
+  list-style-type: none;
+  font-family: NeueMontreal;
+  font-weight: 500;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fefefe;
+  font-size: 1.3rem;
+}
+
+header ul li:first-child{
+  margin-left: 0;
+}
+
+main {
+  box-sizing: border-box;
+}
+
+main h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+main h1 a {
+  color: #fefefe;
+  font-weight: 600;
+}
+
+main a[target="_blank"],
+header a[target="_blank"]{
+  position: relative;
+}
+
+header a[target="_blank"]:hover::after,
+main a[target="_blank"]:hover::after {
+  content: '\2197';
+  color: #fefefe;
+  position: absolute;
+  font-size: 1.3rem;
+  right: -1rem;
+}
+
+footer {
+  box-sizing: border-box;
+  display: flex;
+}
+
+footer address{
+  width: 50%;
+  display: flex;
+  gap: 40px;
+  font-size: 1.3rem;
+  color: #fefefe;
+  font-style: normal;
+  font-weight: 500;
+}
+
+footer address .physical :not(.name){
+  color: #696969;
+}
+
+footer address .electronic a {
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer address .electronic a.whatsapp{
+  color: #52FF6A;
+  text-decoration: underline;
+}
