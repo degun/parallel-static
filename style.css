@@ -26,7 +26,12 @@ body{
   justify-content: space-between;
 }
 
-a:hover{
+a {
+  white-space: nowrap;
+}
+
+a:hover,a:focus{
+  background-color: #fefefe33;
   text-decoration: underline;
 }
 
@@ -78,15 +83,14 @@ main h1 a {
   font-weight: 600;
 }
 
-main a[target="_blank"],
-header a[target="_blank"]{
+a[target="_blank"]{
   position: relative;
 }
 
 header a[target="_blank"]:hover::after,
 main a[target="_blank"]:hover::after {
   content: '\2197';
-  color: #fefefe;
+  color: #fefefecc;
   position: absolute;
   font-size: 1.3rem;
   right: -1rem;
@@ -115,9 +119,26 @@ footer address .electronic a {
   color: #fefefe;
   text-decoration: none;
   font-weight: 500;
+  position: relative;
+}
+
+footer address .electronic a:not(.whatsapp):hover {
+  text-decoration: underline;
 }
 
 footer address .electronic a.whatsapp{
   color: #52FF6A;
   text-decoration: underline;
 }
+
+footer address .electronic a.whatsapp:hover{
+  background-color: #52FF6A33;
+}
+
+/* footer a[href^="mailto:"]:hover::after {
+  content: '🖃';
+  color: #fefefe;
+  position: absolute;
+  font-size: 1.3rem;
+  right: -1rem;
+} */
