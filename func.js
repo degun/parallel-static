@@ -12,7 +12,7 @@ function socialLinksChange (){
   instagram.innerHTML = width < 750 ? 'IN' : 'Instagram';
   linkedin.innerHTML = width < 750 ? 'LI' : 'LinkedIn';
   whatsapp.innerHTML = width < 750 ? 'WU' : 'WhatsApp';
-  whatsapp.setAttribute('href', process.env.WHATSAPP_URL)
+  whatsapp.href = process.env.WHATSAPP_URL;
 }
 
 window.addEventListener('load', function () {
