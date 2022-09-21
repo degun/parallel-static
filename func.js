@@ -14,14 +14,7 @@ function socialLinksChange (){
   whatsapp.innerHTML = width < 750 ? 'WU' : 'WhatsApp';
 }
 
-async function changeWhatsappBasedOnIP(){
-  fetch('https://ipinfo.io').then(data => {
-    console.log(data);
-  })
-}
-
 window.addEventListener('load', function () {
   socialLinksChange();
-  changeWhatsappBasedOnIP();
   window.addEventListener('resize', socialLinksChange);
 })
