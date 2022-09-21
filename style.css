@@ -222,6 +222,8 @@ footer a[href^="tel:"]:hover::after {
   footer address {
     width: 100%;
     gap: 20px;
+    line-height: 1.5;
+    font-size: 1.5rem;
   }
 
   footer address:first-child{
