@@ -170,6 +170,11 @@ footer a[href^="tel:"]:hover::after {
   right: -1.6rem;
 }
 
+*::selection {
+  color: black;
+  background-color: white;
+}
+
 @supports (-moz-appearance:none) {
   main a[target="_blank"]:hover::after {
     content: '';
